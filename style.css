@@ -76,8 +76,11 @@ header {
     font-family: var(--font-nexa);
     font-size: 3em;
     font-variant: small-caps;
+    margin-right: 2.6em;
+    text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.3);
 }
 .user p {
+    font-size: 1.5em;
     margin-bottom: 5rem;
 }
 .field-user {
@@ -107,6 +110,7 @@ header {
     font-variant: small-caps;
     text-align: center;
     color: var(--color1);
+    text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.3);
 }
 .field-reg {
     border-color: var(--color2);
@@ -145,7 +149,7 @@ header {
     font-family: var(--font-fut);
     font-size: 1em;
     font-weight: bold;
-    padding: 0.7rem 2.5rem;
+    padding: 0.6rem 2.5rem;
     cursor: pointer;
     letter-spacing: 2px;
     font-variant: small-caps;
@@ -232,5 +236,8 @@ header {
     .menu li, .menu a {
         font-size: 1em;
         margin: 2px;
+    }
+    .user p {
+    font-size: 1em;
     }
 }
