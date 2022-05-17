@@ -29,7 +29,7 @@ body {
 main {
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 60px 1fr;
     grid-template-columns: 2fr 1fr;
 }
 fieldset {
@@ -56,13 +56,14 @@ header {
 }
 .menu li, .menu a{
     align-self: center;
-    color: var(--color1);
+    color: var(--color3);
     font-weight: 700;
     font-size: 1.1em;
     list-style-type: none;
     text-decoration: none;
     display: inline-block;
     margin: 15px;
+    letter-spacing: 1px;
 }
 
 
@@ -94,6 +95,15 @@ header {
 .field-user {
     border-color: var(--color1);
     color: var(--color1);
+}
+div {
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    width: 200px;
+    height: 60px;
+    border: 1px solid black;
+
 }
 
 
@@ -244,7 +254,7 @@ header {
 @media (max-width: 500px) {
     .menu li, .menu a {
         font-size: 1em;
-        margin: 2px;
+        margin: 3px;
     }
     .user p {
     font-size: 1em;
