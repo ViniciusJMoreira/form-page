@@ -13,7 +13,7 @@
     --font-fut: 'futural';
     --font-nexa: 'nexa';
     --color1: #2c462b;      /*#2c462b*/
-    --color2: #f0e5c1;
+    --color2: #ECE3C9;
 }
 * {
     margin: 0;
@@ -80,7 +80,6 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: 8rem;
-    
 }
 .user h1 {
     align-self: center;
@@ -191,7 +190,7 @@ header {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: var(--color1);
+    background-color: var(--color2);
     background-origin: left;
     transform: translateX(-120%) translateY(-26%) skewX(30deg) scaleX(0);
     transition: 1.5s cubic-bezier(0.075, 0.82, 0.2, 1);
@@ -201,7 +200,7 @@ header {
     transform: translateX(-22%) translateY(-26%) skewX(30deg) scaleX(1.3);
 }
 .btn-in:hover {
-    color: var(--color2);
+    color: var(--color1);
     transition: .5s ease-in-out;
 }
 .btn-up {
@@ -240,11 +239,30 @@ footer {
 picture {
     margin-right: 3.5em;
 }
+.img-ico {
+    animation: anim 4s ease-in infinite;
+}
+@keyframes anim{
+    50% {
+        transform: translateY(-20%);
+    }
+}
 picture img {
     width: 25px;
     height: 25px;
     margin: 0 10px;
 }
+.img-whats {
+    animation-delay: .5s;
+}
+.img-insta {
+    animation-delay: 1s;
+}
+.img-face {
+    animation-delay: 1.5s;
+}
+
+
 /*                  MEDIA*/
 @media (max-width: 1200px) {
     main {
