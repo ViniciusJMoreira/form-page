@@ -29,7 +29,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     background: url('background.png');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top left;
     background-color: var(--color2);
@@ -265,11 +265,11 @@ picture img {
 
 /*                  MEDIA*/
 @media (max-width: 1200px) {
-    main {
-        background: url('background-780.png'), var(--color2);
+    body {
+        background: url('background.png'), var(--color2);
         background-size: cover;
         background-repeat: no-repeat;
-
+        
     }
     header {
         margin-right: 0.6em;
@@ -286,18 +286,30 @@ picture img {
     }
 }
 @media (max-width: 1000px) {
+    main {
+        background: url('background580.png'), var(--color2);
+        background-size: cover;
+        background-position: left center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+    }
     body {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
-    /*.user {
-        background: none;
-    }*/
     .register {
         grid-area: 2 / 1 / 3 / 2;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        padding-left: 0;
     }
 }
 @media (max-width: 500px) {
+    main {
+        background: url('background400.png'), var(--color2);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     .menu li, .menu a {
         font-size: 1em;
         margin: 3px;
